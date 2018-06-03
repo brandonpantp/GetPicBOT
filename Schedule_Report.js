@@ -7,6 +7,9 @@ var linebot = require('linebot');
 var express = require('express');
 var request = require('request');
 console.log('宣告Line BOT');
+var myDate = new Date();
+var iMonth=myDate.getMonth(); //取目前月份(0-11,0代表1月)
+var iDay=myDate.getDate(); //取目前日(1-31)
 var bot = linebot({
     channelId: '1585073032',
     channelSecret: '0af678b6490a7452cd453250d9bd6998',
