@@ -6,6 +6,9 @@ const { Client } = require('pg');
 var linebot = require('linebot');
 var express = require('express');
 var request = require('request');
+var myDate = new Date();
+var iMonth=myDate.getMonth();
+var iDay=myDate.getDate();
 console.log('宣告Line BOT');
 var bot = linebot({
     channelId: '1585073032',
